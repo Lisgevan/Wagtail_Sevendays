@@ -33,7 +33,13 @@
         </main>
 
         <footer>
-            custom footer
+        
+        {% if settings.site_settings.SocialMediaSettings.instagram %}
+            <a href="{{ settings.site_settings.SocialMediaSettings.instagram }}">
+                Follow us on Instagram
+            </a>
+        {% endif %}
+            
         </footer>
 
         {# Global javascript #}
