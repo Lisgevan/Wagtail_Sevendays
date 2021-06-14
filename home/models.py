@@ -14,8 +14,8 @@ class HomePage(Page):
 
     body = StreamField([
         #('name', blocks.SomethingBlock()),
-        ('heading', blocks.CharBlock(template='heading_block.html')),
-        ('image', ImageChooserBlock()),
+        ('heading', blocks.CharBlock(template='blocks/heading_block.html')),
+        ('image', ImageChooserBlock(template='blocks/image_block.html')),
         ('paragraph', blocks.RichTextBlock()),
         ('carousel', Carousel()),
     ], null=True)

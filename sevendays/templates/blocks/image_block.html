@@ -1,0 +1,7 @@
+{% load static wagtailimages_tags%}
+
+{% image self fill-1400x800 as img%}
+<span class="{{ self.title }}">
+    <img src="{{ img.url }}" alt="{{ img.alt }}" >
+</span>
+{% comment %} style='width: 100%; height: auto;' {% endcomment %}
