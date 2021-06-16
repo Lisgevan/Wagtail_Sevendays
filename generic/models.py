@@ -34,7 +34,7 @@ class GenericPage(Page):
 
     body = StreamField([
         #('name', blocks.SomethingBlock()),
-        ('heading', blocks.CharBlock(template='heading_block.html')),
+        ('heading', blocks.CharBlock(template='blocks/heading_block.html')),
         ('image', ImageChooserBlock()),
         ('paragraph', blocks.RichTextBlock()),
     ], null=True)
